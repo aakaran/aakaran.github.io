@@ -91,7 +91,7 @@
             <tbody>
               <tr>
                 <td align="left" style="vertical-align:left;">
-                  <td style="padding:16px;width:100%;vertical-align:middle">
+                  <td style="padding:14px;width:100%;vertical-align:middle">
                     <heading>Research</heading>
                 </td>
               </tr>
@@ -100,13 +100,93 @@
 
         <div id="tab1" style="display:block">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='roboarena-image'>
+                    <img src='images/rwt.png' width="160" height="160"></div>
+                  <img src='images/rwt.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('multiprompt-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('multiprompt-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2506.10955/">
+                  <papertitle>Reasoning Without Training:&nbsp;&nbsp;Your Base Model is Smarter Than You Think</papertitle>
+                </a>
+                <br>
+                <strong>Aayush Karan</strong>,
+                <a href="https://yilundu.github.io//">Yilun Du</a>,
+                <br>
+                <em>arXiv preprint</em>, 2025
+                <br>
+                <a href="https://arxiv.org/pdf/2506.10955">paper</a>
+                <p></p>
+                <p>
+                  We propose a sampling algorithm for base models that gives single-shot reasoning boosts on par with those from RL-posttraining, without
+                  compromising generation diversity and multi-shot (pass@k) performance. Crucially, our method is training-free, dataset-free, and verifier-free.
+                </p>
+                <br>
+              </td>
+            </tr>
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='roboarena-image'>
+                    <img src='images/rna.png' width="160" height="160"></div>
+                  <img src='images/rna.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('multiprompt-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('multiprompt-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://www.nature.com/articles/s41592-025-02833-w/">
+                  <papertitle>All-at-once RNA folding with 3D motif prediction framed by evolutionary information</papertitle>
+                </a>
+                <br>
+                <strong>Aayush Karan</strong>,
+                <a href="https://kulinshah98.github.io/">Elena Rivas</a>,
+                <br>
+                <em>Nature Methods</em>, 2025
+                <br>
+                <a href="https://www.nature.com/articles/s41592-025-02833-w">paper</a>
+                <a href="https://github.com/EddyRivasLab/R-scape/blob/master/versions/rscape/rscape_v2.5.9.a.tar.gz/">code</a>
+                <a href="https://x.com/aakaran31/status/1974129265420743107">tweet</a>
+                <p></p>
+                <p>
+                  The field of RNA structure prediction has long lacked a reliable, flexible, and self-contained method to detect the presence of key 3D
+                  building blocks in folded RNAs. We provide an algorithm that does exactly this, predicting a near exhaustive set of 3D configurations (everything),
+                  at any location (everywhere), fully end-to-end over multiple structural hierarchies (all-at-once).
+                </p>
+                <br>
+              </td>
+            </tr>
               
             <tr onmouseout="malle_stop()" onmouseover="malle_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='roboarena-image'>
-                    <img src='images/roboarena-teaser.png' width="160" height="160"></div>
-                  <img src='images/roboarena-teaser.png' width="160" height="160">
+                    <img src='images/reg.png' width="160" height="160"></div>
+                  <img src='images/reg.png' width="160" height="160">
                 </div>
                 <script type="text/javascript">
                   function malle_start() {
@@ -131,10 +211,207 @@
                 <em>arXiv preprint</em>, 2025
                 <br>
                 <a href="https://arxiv.org/pdf/2506.10955">paper</a>
+                <a href="https://x.com/aakaran31/status/1933557802376810551">tweet</a>
                 <p></p>
                 <p>
-                Remarkably, diffusion models can be steered towards optimizing given reward functions at inference time, generating samples that are both realistic and tailored to a reward objective. However, when these reward objectives are highly multimodal or compress too much information about the sample, these steering techniques fail spectacularly.
-                We discover that strong latent initializations in noise space offer a new axis for desiging inference-time algorithms that surpass these prior limitations. We propose a simple algorithm (ReGuidance) leveraging this insight and both empirically and theoretically demonstrate its superiority over prior techniques. See the paper for more details!
+                We discover that strong latent initializations in noise space offer a new axis for desiging inference-time algorithms that steer diffusion models towards reward functions. We propose a simple algorithm (ReGuidance) leveraging this insight and both empirically and theoretically demonstrate its superiority over prior techniques.
+                </p>
+                <br>
+              </td>
+            </tr>
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='roboarena-image'>
+                    <img src='images/blink.png' width="160" height="160"></div>
+                  <img src='images/blink.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('multiprompt-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('multiprompt-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2502.00921/">
+                  <papertitle>Blink of an eye:&nbsp;&nbsp;a simple theory for feature localization in generative models</papertitle>
+                </a>
+                <br>
+                <a href="https://marvinfli.github.io/">Marvin Li</a>,
+                <strong>Aayush Karan</strong>,
+                <a href="https://sitanchen.com/">Sitan Chen</a>
+                <br>
+                <em>ICML</em>, 2025  <span style="color:red;">(Oral, top 1% of submissions)</span>
+                <br>
+                <a href="https://arxiv.org/pdf/2502.00921">paper</a>
+                <a href="https://x.com/marvin_li03/status/1886784360961204372">tweet</a>
+                <p></p>
+                <p>
+                  We present a unifying theory of LLMs and diffusion models explaining the sudden emergence of high-level semantic features during
+                  generation. We introduce the notion of critical windows for LLMs and empirically correlate them to reasoning failures.
+                </p>
+                <br>
+              </td>
+            </tr>
+
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='roboarena-image'>
+                    <img src='images/pred.png' width="160" height="160"></div>
+                  <img src='images/pred.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('multiprompt-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('multiprompt-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2502.20375/">
+                  <papertitle>When does a predictor know its own loss?</papertitle>
+                </a>
+                <br>
+                <a href="https://aravind-pg.github.io/">Aravind Gollakota</a>,
+                <a href="https://parikg.github.io/">Parikshit Gopalan</a>,
+                <strong>Aayush Karan</strong>,
+                <a href="https://cpeale.github.io/">Charlotte Peale</a>,
+                <a href="https://udiwieder.wordpress.com/">Udi Wieder</a>
+                <br>
+                <em>FORC</em>, 2025
+                <br>
+                <a href="https://arxiv.org/pdf/2502.20375">paper</a>
+                <a href="https://x.com/aakaran31/status/1895481587044942324">tweet</a>
+                <p></p>
+                <p>
+                  We present a theory of loss prediction in machine learning and establish an equivalence with algorithmic fairness.
+                </p>
+                <br>
+              </td>
+            </tr>
+
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='roboarena-image'>
+                    <img src='images/unrolled.png' width="160" height="160"></div>
+                  <img src='images/unrolled.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('multiprompt-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('multiprompt-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2409.12947/">
+                  <papertitle>Unrolled denoising networks provably learn optimal Bayesian inference</papertitle>
+                </a>
+                <br>
+                <strong>Aayush Karan</strong>,
+                <a href="https://kulinshah98.github.io/">Kulin Shah</a>,
+                <a href="https://sitanchen.com/">Sitan Chen</a>
+                <a href="https://en.wikipedia.org/wiki/Yonina_Eldar/">Yonina Eldar</a>
+                <br>
+                <em>NeurIPS</em>, 2024
+                <br>
+                <a href="https://arxiv.org/pdf/2409.12947">paper</a>
+                <a href="https://x.com/aakaran31/status/1837144242201973147">tweet</a>
+                <p></p>
+                <p>
+                  We propose a theory-inspired neural network for solving inverse problems that provably learns optimal Bayesian inference. 
+                </p>
+                <br>
+              </td>
+            </tr>
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='roboarena-image'>
+                    <img src='images/tri.png' width="160" height="160"></div>
+                  <img src='images/tri.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('multiprompt-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('multiprompt-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0021869322002411/">
+                  <papertitle>Tridiagonal pairs of q-Serre type and their linear perturbations</papertitle>
+                </a>
+                <br>
+                <strong>Aayush Karan</strong>,
+                <br>
+                <em>Journal of Algebra</em>, 2022
+                <br>
+                <a href="https://arxiv.org/pdf/2107.01430">paper</a>
+                <p></p>
+                <p>
+                  We examine a pair of linear maps with a particular property (tridiagonal pairs) inspired from statistical physics, and we demonstrate
+                  that linear perturbations preserve this property under a very simple polynomial condition. 
+                </p>
+                <br>
+              </td>
+            </tr>
+
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='roboarena-image'>
+                    <img src='images/knot.png' width="160" height="160"></div>
+                  <img src='images/knot.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('multiprompt-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('multiprompt-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://www.sciencedirect.com/science/article/pii/S016686411930238X/">
+                  <papertitle>Generating set for nonzero determinant links under skein relation</papertitle>
+                </a>
+                <br>
+                <strong>Aayush Karan</strong>,
+                <br>
+                <em>Topology and its Applications</em>, 2019
+                <br>
+                <a href="https://arxiv.org/pdf/1901.01556">paper</a>
+                <p></p>
+                <p>
+                  We resolve an open problem proposed by David Mullins in 1993 regarding the recursive computability of crucial topological quantities
+                  known as nonzero determinant link invariants. 
                 </p>
                 <br>
               </td>
