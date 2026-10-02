@@ -249,6 +249,50 @@
 
         <div id="tab1" style="display:block">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='roboarena-image'>
+                    <img src='images/fws_teaser.png' width="160" height="160"></div>
+                  <img src='images/fws_teaser.png' width="160" height="160">
+                </div>
+                <script type="text/javascript">
+                  function malle_start() {
+                    document.getElementById('multiprompt-image').style.opacity = "1";
+                  }
+
+                  function malle_stop() {
+                    document.getElementById('multiprompt-image').style.opacity = "0";
+                  }
+                  malle_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2610.02140/">
+                  <papertitle>Finetuning with Sampling:&nbsp;&nbsp;SFT Learns Better Than You Think</papertitle>
+                </a>
+                <br>
+                <strong>Aayush Karan</strong>,
+                <a href="https://sitanchen.com/">Sitan Chen</a>,
+                <a href="https://yilundu.github.io/">Yilun Du</a>
+                <br>
+                <em>NeurIPS</em>, 2026 
+                <br>
+                <a href="https://aakaran.github.io/finetuning_with_sampling/">blog post</a>&nbsp;/
+                <a href="https://arxiv.org/pdf/2610.02140">paper</a>&nbsp;/
+                <a href="https://github.com/aakaran/finetuning-with-sampling">code</a>&nbsp;/
+                <a href="https://x.com/aakaran31/status/2106037829059133903">tweet</a>
+                <p></p>
+                <p>
+                  We introduce algorithmic sampling to posttraining, which we leverage to reshape off-policy trajectories to be more on-policy for learning.
+                  Composed with this sampling operator, standard SFT delivers a substantial bump in generalization while strongly mitigating forgetting, often
+                  outperforming even prevailing on-policy learning methods like RL and OPSD.
+                  
+                </p>
+                <br>
+              </td>
+            </tr>
 
 
             <tr onmouseout="malle_stop()" onmouseover="malle_start()">
